@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## MZGoneView
 
-Copyright (c) 2017 roy@buzzni.com <muzcity@gmail.com>
+Copyright (c) 2017 muzcity <muzcity@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

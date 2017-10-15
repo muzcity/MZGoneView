@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  MZGoneView
 //
-//  Created by roy@buzzni.com on 10/15/2017.
-//  Copyright (c) 2017 roy@buzzni.com. All rights reserved.
+//  Created by muzcity on 10/15/2017.
+//  Copyright (c) 2017 muzcity. All rights reserved.
 //
 
 import UIKit
