@@ -9,6 +9,13 @@
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+Used :
+//Set gone attribute.
+goneView.gone(direction: GONE_DIRECTION.goneHeight, animated: true)
+
+//Remove gone attribute.
+goneView.gone(direction: GONE_DIRECTION.visible, animated: true)
+
 ## Requirements
 
 ## Installation
@@ -22,7 +29,7 @@ pod 'MZGoneView'
 
 ## Author
 
-roy@buzzni.com, muzcity@gmail.com
+muzcity, muzcity@gmail.com
 
 ## License
 
