@@ -1,0 +1,6 @@
+framework module Pods_MZGoneView_Tests {
+  umbrella header "Pods-MZGoneView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

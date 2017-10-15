@@ -1,0 +1,16 @@
+PODS:
+  - MZGoneView (0.1.0)
+
+DEPENDENCIES:
+  - MZGoneView (from `../`)
+
+EXTERNAL SOURCES:
+  MZGoneView:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MZGoneView: af9358ac7612d8336afc94be12fe0b19942aa2af
+
+PODFILE CHECKSUM: 719445a32c164a38dccb776fc3785353281092a4
+
+COCOAPODS: 1.2.1

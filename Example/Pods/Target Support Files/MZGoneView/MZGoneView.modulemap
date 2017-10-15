@@ -1,0 +1,6 @@
+framework module MZGoneView {
+  umbrella header "MZGoneView-umbrella.h"
+
+  export *
+  module * { export * }
+}
