@@ -1,6 +1,6 @@
 # MZGoneView
 
-[![CI Status](http://img.shields.io/travis/roy@buzzni.com/MZGoneView.svg?style=flat)](https://travis-ci.org/roy@buzzni.com/MZGoneView)
+[![CI Status](http://img.shields.io/travis/muzcity/MZGoneView.svg?style=flat)](https://travis-ci.org/muzcity/MZGoneView)
 [![Version](https://img.shields.io/cocoapods/v/MZGoneView.svg?style=flat)](http://cocoapods.org/pods/MZGoneView)
 [![License](https://img.shields.io/cocoapods/l/MZGoneView.svg?style=flat)](http://cocoapods.org/pods/MZGoneView)
 [![Platform](https://img.shields.io/cocoapods/p/MZGoneView.svg?style=flat)](http://cocoapods.org/pods/MZGoneView)
