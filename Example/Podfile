@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MZGoneView_Example' do
+  pod 'MZGoneView', :path => '../'
+
+  target 'MZGoneView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
