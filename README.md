@@ -13,10 +13,10 @@ Used :
 
 ```
 //Set gone attribute.
-goneView.gone(direction: GONE_DIRECTION.goneHeight, animated: true)
+goneView.gone(direction: MZVisibleState.goneHeight, animated: true)
 
 //Remove gone attribute.
-goneView.gone(direction: GONE_DIRECTION.visible, animated: true)
+goneView.gone(direction: MZVisibleState.visible, animated: true)
 ```
 
 ## Requirements
