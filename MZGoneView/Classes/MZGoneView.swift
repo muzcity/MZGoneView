@@ -38,9 +38,9 @@ public class MZGoneView: UIView {
     }
     
     
-    private func setLayout(_ direction : MZVisibleState) {
+    private func setLayout(_ state : MZVisibleState) {
         
-        if direction == .goneWidth {
+        if state == .goneWidth {
             
             if let _ = widthContraint {
                 return
@@ -49,7 +49,7 @@ public class MZGoneView: UIView {
             widthContraint = NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 0)
             self.addConstraint(widthContraint)
         }
-        if direction == .goneHeight {
+        if state == .goneHeight {
             
             if let _ = heightContraint {
                 return
@@ -74,13 +74,13 @@ public class MZGoneView: UIView {
         heightContraint = nil
     }
     
-    open func gone(direction: MZVisibleState, animated: Bool) {
+    open func gone(_ state: MZVisibleState, animated: Bool) {
         
-        if direction == .visible {
+        if state == .visible {
             removeLayout()
         }
         else {
-            setLayout(direction)
+            setLayout(state)
         }
         
         if animated {

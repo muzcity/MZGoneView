@@ -26,13 +26,13 @@ class ViewController: UIViewController {
     
     
     @IBAction func goneTrueButtonPressed(_ sender: UIButton) {
-        gone1.gone(direction: MZVisibleState.goneHeight, animated: true)
-        gone2.gone(direction: MZVisibleState.goneWidth, animated: true)
+        gone1.gone(MZVisibleState.goneHeight, animated: true)
+        gone2.gone(MZVisibleState.goneWidth, animated: true)
     }
     
     @IBAction func goneFalseButtonPressed(_ sender: UIButton) {
-        gone1.gone(direction: MZVisibleState.visible, animated: true)
-        gone2.gone(direction: MZVisibleState.visible, animated: true)
+        gone1.gone(MZVisibleState.visible, animated: true)
+        gone2.gone(MZVisibleState.visible, animated: true)
     }
     
 }
