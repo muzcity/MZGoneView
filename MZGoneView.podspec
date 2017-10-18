@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MZGoneView'
-  s.version          = '1.0.0'
+  s.version          = '1.0.2'
   s.summary          = 'The MZGoneView support gone attribute with autolayout.'
 
 # This description is used to generate tags and improve search results.

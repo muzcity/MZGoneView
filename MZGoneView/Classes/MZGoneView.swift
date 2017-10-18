@@ -7,7 +7,7 @@
 
 import UIKit
 
-public enum GONE_DIRECTION : UInt {
+public enum MZVisibleState : UInt {
     case visible
     case goneWidth
     case goneHeight
@@ -15,8 +15,8 @@ public enum GONE_DIRECTION : UInt {
 
 public class MZGoneView: UIView {
     
-    var widthContraint : NSLayoutConstraint!
-    var heightContraint : NSLayoutConstraint!
+    private var widthContraint : NSLayoutConstraint!
+    private var heightContraint : NSLayoutConstraint!
     
     required public init?(coder aDecoder: NSCoder) {
         
@@ -38,13 +38,23 @@ public class MZGoneView: UIView {
     }
     
     
-    private func setLayout(_ direction : GONE_DIRECTION) {
+    private func setLayout(_ direction : MZVisibleState) {
         
         if direction == .goneWidth {
+            
+            if let _ = widthContraint {
+                return
+            }
+            
             widthContraint = NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 0)
             self.addConstraint(widthContraint)
         }
         if direction == .goneHeight {
+            
+            if let _ = heightContraint {
+                return
+            }
+            
             heightContraint = NSLayoutConstraint(item: self, attribute: NSLayoutAttribute.height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: 0)
             self.addConstraint(heightContraint)
         }
@@ -64,7 +74,7 @@ public class MZGoneView: UIView {
         heightContraint = nil
     }
     
-    open func gone(direction: GONE_DIRECTION, animated: Bool) {
+    open func gone(direction: MZVisibleState, animated: Bool) {
         
         if direction == .visible {
             removeLayout()
